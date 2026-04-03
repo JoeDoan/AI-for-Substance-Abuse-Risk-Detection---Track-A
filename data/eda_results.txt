@@ -1,0 +1,69 @@
+=== Exploratory Data Analysis (EDA) ===
+
+--- 1. Mental Health Corpus (Local CSV) ---
+Shape: (27977, 2)
+
+Columns:
+text       str
+label    int64
+dtype: object
+
+First 3 Rows:
+                                                text  label
+0  dear american teens question dutch person hear...      0
+1  nothing look forward lifei dont many reasons k...      1
+2  music recommendations im looking expand playli...      0
+
+Label Distribution for label:
+label
+0    0.505
+1    0.495
+Name: proportion, dtype: float64
+
+--- 2. Reddit Mental Health Classification (HuggingFace) ---
+Dataset Dictionary: dict_keys(['train'])
+
+Shape of Train Split: (1107302, 2)
+
+Columns:
+label    str
+text     str
+dtype: object
+
+First 3 Rows:
+       label                                               text
+0  addiction  Deciding to go of tramadol Well after never ta...
+1  addiction  My vyvanse addiction... It has gotten pretty b...
+2  addiction  Quitting coke and nicotine I'm gonna start by ...
+
+Label Distribution:
+label
+legaladvice        0.148
+personalfinance    0.116
+depression         0.106
+jokes              0.085
+relationships      0.070
+suicidewatch       0.060
+anxiety            0.052
+fitness            0.045
+adhd               0.041
+mentalhealth       0.041
+parenting          0.031
+conspiracy         0.027
+bpd                0.022
+lonely             0.021
+socialanxiety      0.021
+guns               0.021
+meditation         0.015
+EDAnonymous        0.013
+divorce            0.011
+autism             0.008
+schizophrenia      0.008
+healthanxiety      0.008
+ptsd               0.008
+addiction          0.007
+alcoholism         0.005
+bipolarreddit      0.005
+teaching           0.004
+COVID19_support    0.001
+Name: proportion, dtype: float64

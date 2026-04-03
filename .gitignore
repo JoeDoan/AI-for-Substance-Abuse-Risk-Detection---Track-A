@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Ignore large datasets and vector DBs (github limit is 100MB)
+data/chroma_db/
+data/*.csv
+data/*.zip
+data/*.pkl
