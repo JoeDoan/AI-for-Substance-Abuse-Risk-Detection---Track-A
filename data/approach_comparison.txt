@@ -1,0 +1,12 @@
+SubstanceWatch AI — Approach Comparison Report
+Test Set: 60 posts (30 High Risk + 30 Safe)
+
+Approach                                 Prec  Recall     F1    Acc
+-----------------------------------------------------------------
+A — ML Only (TF-IDF + LR)              0.9655  0.9333 0.9492 0.9500
+B — RAG Only (ChromaDB)                0.9091  1.0000 0.9524 0.9500
+C — Dual-Threshold (Full Pipeline)     1.0000  0.8333 0.9091 0.9167
+-----------------------------------------------------------------
+
+Best F1:     B — RAG Only (ChromaDB)
+Best Recall: B — RAG Only (ChromaDB)
